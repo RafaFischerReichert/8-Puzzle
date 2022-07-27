@@ -67,7 +67,7 @@ Game.prototype.randomize = function () {
   var that = this;
   var states = {};
   // var iteration = parseInt(prompt('How many random moves from desired state?'));
-  var iteration = 30;
+  var iteration = 100;
 
   if (!iteration || isNaN(iteration))
     return alert("Invalid iteration count, please enter a number");

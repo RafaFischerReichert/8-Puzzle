@@ -26,38 +26,38 @@
     </div>
     <div id="visualization"></div>
     <div id="controls">
-        <div class="heading">Board</div>
+        <div class="heading">Tabuleiro</div>
         <div class="content">
-            <button id="randomize">Randomize</button>
-            <button id="customInput">Enter Custom State</button>
+            <button id="randomize">Embaralhar</button>
+            <button id="customInput">Customizar estado</button>
         </div>
 
-        <div class="heading">Search</div>
+        <div class="heading">Busca</div>
         <div class="content">
-            <label>Algorithm</label>
+            <label>Algoritmo</label>
             <select id="searchType">
-                <option value="greedyBest" selected>Greedy-Best</option>
+                <option value="greedyBest" selected>Busca Gulosa</option>
                 <option value="aStar">A*</option>
             </select>
-            <label>Iteration Limit</label>
+            <label>Limite de Iterações</label>
             <input type="number" id="iterationLimit" value="10000">
-            <label>Depth Limit</label>
+            <label>Limite de Profundidade</label>
             <input type="number" id="depthLimit" value="0">
             <label style="display: none;">
                 <input type="checkbox" id="visualizationCheck" checked>
-                Visualization
+                Visualização
             </label>
             <label style="display: none;">
                 <input type="checkbox" id="expandedNodeCheck">
                 Early check optimization
             </label>
 
-            <button id="searchStep">Iterate one step</button>
-            <button id="search">Search</button>
-            <button id="searchStop" style="display: none;">Stop</button>
+            <button id="searchStep">Iterar um passo</button>
+            <button id="search">Buscar</button>
+            <button id="searchStop" style="display: none;">Parar</button>
         </div>
 
-        <div class="heading">Search Result</div>
+        <div class="heading">Resultados</div>
         <div id="searchResult" class="content"></div>
     </div>
 
