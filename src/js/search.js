@@ -108,6 +108,7 @@ function search(opt_options) {
   }
 }
 
+// Função que calcula o próximo nó a ser avaliado
 function getNextNode(options) {
   switch (options.type) {
     case SearchType.GREEDY_BEST:

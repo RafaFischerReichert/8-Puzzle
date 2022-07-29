@@ -14,7 +14,7 @@ Game.Actions = {
 };
 
 Game.DesiredState = "123456780";
-
+// Função que transforma o array que guarda o estado atual do jogo numa matriz 3x3 e guarda os movimentos possíveis
 Game.prototype.getAvaliableActionsAndStates = function () {
   var result = {};
 
@@ -89,7 +89,7 @@ Game.prototype.randomize = function () {
 };
 
 Game.prototype.getManhattanDistance = function () {
-  // Função que gera o parâmetro da busca gulosa.
+  // Função que gera o parâmetro da busca gulosa, a distância de Manhattan, que é a soma das distâncias vertical e horizontal até o estado desejado de cada ladrilho.
   var distance = 0;
 
   var oneIndex = this.state.indexOf("1");
@@ -131,7 +131,7 @@ Game.prototype.getManhattanDistance = function () {
 
   return distance;
 };
-
+// Retorna a linha e coluna de cada índice do estado atual
 Game.indexToRowColumn = function (index) {
   return {
     row: Math.floor(index / 3),
